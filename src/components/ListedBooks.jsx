@@ -1,9 +1,13 @@
-import React from 'react';
+
+import React from "react";
+
 
 const ListedBooks = () => {
+
   return (
     <div>
-      <h1>listed book</h1>
+      <h1>Listed Book Details</h1>
+      
     </div>
   );
 };

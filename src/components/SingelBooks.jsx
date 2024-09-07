@@ -1,8 +1,10 @@
 import React from "react";
 import { FaStar } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const SingelBooks = ({ book }) => {
   const {
+    bookId,
     author,
     bookName,
     category,
@@ -17,22 +19,24 @@ const SingelBooks = ({ book }) => {
   return (
     <div className=" bg-white shadow-lg border rounded-lg overflow-hidden">
       {/* Image */}
-     <div className="h-72 m-10 flex justify-center  items-center bg-gray-100 rounded-xl">
-     <img
-        className="w-32 h-32   object-cover object-center"
-        src={image}
-        alt={book.bookName}
-      />
-     </div>
+      <Link to={`/bookDetels/${bookId}`}>
+        <div className="h-72 m-10 flex justify-center  items-center bg-gray-100 rounded-xl">
+          <img
+            className="w-32 h-32   object-cover object-center"
+            src={image}
+            alt={book.bookName}
+          />
+        </div>
+      </Link>
 
       <div className="px-6">
         {/* Buttons */}
         <div className="flex gap-4 my-4">
           <button className="text-green-500 bg-gray-100 py-2 px-6 rounded-3xl font-bold">
-            Buy Now
+            Young Adult
           </button>
           <button className="text-green-500 bg-gray-100 py-2 px-6 rounded-3xl font-bold">
-            Details
+            Identity
           </button>
         </div>
 
