@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Mulish", sans-serif;
+}
+
+.container{
+  @apply  sm:max-w-xl md:max-w-full lg:max-w-screen-xl  mx-auto
+}
